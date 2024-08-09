@@ -1,0 +1,44 @@
+{
+    "dataset_metadata":{
+        "train_images": "dataset/train_gbm_lgg.npy",
+        "test_images": "dataset/test_gbm_lgg.npy",
+        "train_metadata": "dataset/train_gbm_lgg_512.csv",
+        "test_metadata": "dataset/test_gbm_lgg_512.csv",
+        "num_classes": 3,
+        "task": "multitask",
+        "model_name":"conv_trans",
+        "loss_name":"cox",
+        "optimizer_name":"adam",
+        "learning_rate":0.01,
+        "checkpoints_name":"tcga_gbm_lgg_512"
+    },
+    "model_configs":{
+            "model_name" : "conv_trans",
+            "cnn_encoder" : "tf_efficientnet_b0_ns",
+            "cnn_encoder_pretrained" : true,
+            "vit_arch" : "vit_small",
+            "vit_arch_pretrained" : true,
+            "nc_net_encoder" : true
+    },
+    "dataloader_configs":{
+        "train_dataloader":{
+            "batch_size" : 20
+        },
+        "test_dataloader":{
+            "batch_size" : 20
+        }
+    },
+    "losses":{
+        "cox" : {},
+        "cross_entropy":{}
+    },
+    "evaluators" : {
+        "cindex" : {},
+        "pvalue" : {},
+        "survival_accuracy" : {},
+        "accuracy":{},
+        "roc_auc_score":{}
+    },
+    "tensorboard_logging" : true,
+    "epochs" : 500
+}
