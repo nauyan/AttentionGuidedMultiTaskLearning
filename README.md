@@ -1,6 +1,6 @@
 # Attention Guided Multi-Task Learning
 
-This project implements a multi-task learning approach for survival analysis and cancer detection. The workflow is organized into four main scripts that should be executed in sequence.
+This is an offical implemetation of the paper titled "Attention-Guided Multi-Task Learning for Enhanced Cancer Grading and Survival Prediction". The workflow is organized into four main scripts that should be executed in sequence.
 
 ## Installation
 
