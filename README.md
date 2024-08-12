@@ -99,6 +99,7 @@ Configurations for data loading during training and testing.
 ## Workflow
 
 ### 1.Prepare Dataset
+Before we start preparing the data we need to download the dataset for TCGA-GBMLGG and TCGA-KIRC. The dataset can be downloaded using the Google Drive [link](https://drive.google.com/drive/folders/14TwYYsBeAnJ8ljkvU5YbIHHvFPltUVDr).
 
 ```bash
 python prepare_dataset.py
