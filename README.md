@@ -2,6 +2,8 @@
 
 This is an offical implemetation of the paper titled "Attention-Guided Multi-Task Learning for Enhanced Cancer Grading and Survival Prediction". The workflow is organized into four main scripts that should be executed in sequence.
 
+The trained model weights can be downloaded from the One Drive [Link](https://nustedupk0-my.sharepoint.com/:f:/g/personal/srashid_dphd19seecs_student_nust_edu_pk/Ep-53OAHOm1OiNCN4uawYyYBBv_iXrS7o7Yg59pqnO_ANw?e=1y5dgX).
+
 ## Installation
 
 To set up the environment, use the provided `env.yml` file. This will install all the necessary dependencies.
